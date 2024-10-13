@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="image/logo.png" alt="Restaurant Logo">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html" id="carts">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html" class="bi bi-cart cart-icon">
+            <span id="cart-count">0</span>
+        </a>
+    </header>
+    <main class="main" id="display">
+        <div class="sec-menu">
+            <img src="image/margherita.png" class="foto" alt="Margherita Pizza">
+            <p class="title">Margherita</p>
+            <p class="token">Price: $15</p>
+            <button>Add</button>
+        </div>
+        <div class="sec-menu">
+            <img src="image/salad.png" class="foto" alt="Salad">
+            <p class="title">Salad</p>
+            <p class="token">Price: $12</p>
+            <button>Add</button>
+        </div>
+        <div class="sec-menu">
+            <img src="image/pizza.png" class="foto" alt="Pizza">
+            <p class="title">Pizza</p>
+            <p class="token">Price: $11</p>
+            <button>Add</button>
+        </div>
+        <!-- Add more menu items as needed -->
+    </main>
+    <script src="/js/food.js"></script>
+</body>
+</html>

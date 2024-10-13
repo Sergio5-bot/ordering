@@ -1,0 +1,121 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between elements */
+    background-color: #343434;
+    padding: 15px 30px; /* Increased padding for a better layout */
+}
+
+.logo {
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px; /* Space between menu items */
+    list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.cart-icon {
+    color: white;
+    font-size: 1.5rem; /* Icon size */
+    position: relative; /* Positioning for cart count */
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px; /* Position cart count */
+    right: -15px; /* Position cart count */
+    background-color: red; /* Background color for the count */
+    color: white;
+    border-radius: 50%; /* Circular background */
+    padding: 2px 6px; /* Padding for better size */
+    font-size: 0.75rem; /* Smaller font for count */
+}
+
+.main {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 30px; /* Spacing between items */
+    margin: 20px auto;
+    max-width: 1200px; /* Max width for the main section */
+    padding: 0 20px; /* Padding for smaller screens */
+}
+
+.sec-menu {
+    background-color: white; /* Background for each menu item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Increased padding for the item */
+    text-align: center; /* Center text */
+    transition: transform 0.3s; /* Transition for hover effect */
+    height: 400px; /* Set a fixed height for the item background */
+}
+
+.sec-menu:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.foto {
+    height: 200px; /* Set a fixed height for the image */
+    width: 100%; /* Full width of the container */
+    border-radius: 10px; /* Match the card corners */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+}
+
+.title, .token {
+    margin: 10px 0;
+    font-size: 1.1rem; /* Improved font size */
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px; /* Adjusted button padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Consistent button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+
+    .foto {
+        height: 150px; /* Adjusted size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
